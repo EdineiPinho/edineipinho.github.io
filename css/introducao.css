@@ -1,0 +1,129 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+  white-space: nowrap;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+}
+
+.introducao h1::before {
+  content: " ";
+  display: block;
+  background: url("../img/decoration-title-left.svg") no-repeat center;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -25px;
+  left: -85px;
+}
+
+.introducao h1::after {
+  content: " ";
+  display: block;
+  background: url("../img/decoration-title-right.svg") no-repeat center;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 145px;
+  left: 495px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+
+  .introducao h1::before {
+    width: 86px;
+    height: 86px;
+    top: -17px;
+    left: -56px;
+  }
+
+  .introducao h1::after {
+    width: 86px;
+    height: 86px;
+    top: 95px;
+    left: 335px;
+  }
+}
+
+@media (max-width: 800px){
+
+  .introducao{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .introducao h1::before {
+    width: 5.375rem;
+    height: 5.375rem;
+    top: -1rem;
+    left: -3.5rem;
+  }
+
+  .introducao h1::after {
+    display: none 
+  }
+
+  .introducao div {
+    position: relative;
+  }
+
+  .introducao p::after {
+    content: " ";
+    display: block;
+    background: url("../img/decoration-title-right.svg") no-repeat center;
+    position: absolute;
+    width: 5.375rem;
+    height: 5.375rem;
+    bottom: -2rem;
+    right: 1rem;
+}
+
+@media (max-width: 600px){
+
+  .introducao{
+    grid-template-columns: 1fr;
+  }
+
+  .introducao img {
+    display: none;
+  }
+
+  .introducao p::after {
+    display: none;
+  }
+
+  .introducao h1::after {
+    content: " ";
+    display: block;
+    background: url("../img/decoration-title-right.svg") no-repeat center;
+    position: absolute;
+    width: 5.3rem;
+    height: 5.3rem;
+    top: 5.93rem;
+    left: 20.93rem;
+  }
+
+  .introducao h1, .introducao p {
+    text-align: center;
+  }
+
+}

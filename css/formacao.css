@@ -1,0 +1,221 @@
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2.5rem 1.25rem;
+  background: #141414;
+}
+
+.formacao-titulo {
+  margin-top: 150px;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 2rem;
+  letter-spacing: 0.15em;
+  padding: 10px 1.25rem;
+  padding-left: 15.5vw;
+  color: #292929;
+}
+
+.formacao-texto {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  padding: 10px 1.25rem;
+  padding-left: 15.5vw;
+  color: #a3a3a3;
+}
+
+ul.formacao-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+  
+}
+
+.formacao-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #292929;
+  position: relative;
+}
+
+.curso-ano {
+  text-align: right;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.curso-instituicao {
+  grid-row: 3;
+  position: relative;
+}
+
+.formacao-subtitulo {
+  color: #F5F5F5;
+}
+
+.titulo1::before {
+  content: "";
+  background: url("../img/decoration-degree-left.svg") no-repeat;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  top: 6.6rem;
+  left: 0.625rem;
+}
+
+.titulo2::after {
+    content: "";
+    background: url("../img/decoration-degree-right.svg") no-repeat;
+    height: 2.5rem;
+    width: 3rem;
+    position: absolute;
+    top: 7.0rem;
+    right: 2.875rem;
+}
+
+.formacao-item::after {
+  content: '';
+  background: url("../img/decoration-degree.svg") no-repeat;
+  height: 2.5rem;
+  width: 3rem;
+  position: absolute;
+  right: 3.5rem;
+  bottom: 2rem;
+}
+
+.intensivos, .idiomas {
+  color: #666666;
+  position: relative;
+}
+
+.idiomas {
+  margin-left: 2.625rem;
+} 
+
+h2.intensivos::before {
+  content: "";
+  position: absolute;
+  background: url("../img/decoration-intensive-courses.svg") no-repeat;
+  height: 3rem;
+  width: 3rem;
+  top: 0rem;
+  left: -4rem;
+}
+
+h2.idiomas::before {
+  content: "";
+  position: absolute;
+  background: url("../img/decoration-idioms.svg") no-repeat;
+  height: 3rem;
+  width: 3rem;
+  top: 0rem;
+  left: -4rem;
+}
+
+div.cursos-titulos {
+  margin-top: 3rem;
+  margin-left: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 1.25rem;
+  position: relative;
+}
+
+div.cursos-titulos::before {
+  content: "";
+  position: absolute;
+
+}
+
+div.grid-outros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 7rem;
+}
+
+ul.formacao-intensivos {
+  display: grid;
+  gap: 0px;
+  position: relative;
+}
+
+ul.formacao-intensivos::before {
+  position: absolute;
+  content: '';
+  background: url('../img/time.svg') no-repeat;
+  width: 3rem;
+  height: 3rem;
+  top: -1.5rem;
+  right: 3.4375rem;
+}
+
+.intesivo-item {
+  background-color: #292929;
+  padding: 1.25rem 2.5rem;
+  position: relative;
+}
+
+.intesivo-item:nth-child(odd) {
+  background-color: #1a1919;
+}
+
+ul.formacao-idiomas {
+  display: grid;
+  gap: 0px;
+  position: relative;
+}
+
+ul.formacao-idiomas::before {
+  position: absolute;
+  content: '';
+  background: url('../img/level.svg') no-repeat;
+  width: 3rem;
+  height: 3rem;
+  top: -1.5rem;
+  right: 3.4375rem;
+}
+
+.idioma-item {
+  background-color: #292929;
+  padding: 1.25rem 2.5rem;
+  position: relative;
+}
+
+.idioma-item:nth-child(odd) {
+  background-color: #1a1919;
+}
+
+.idioma-item:nth-child(odd)::before, .intesivo-item:nth-child(odd)::before{
+  content: "";
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  top: 1.625rem;
+  left: 0.5rem;
+  background: #b8b8b8;
+  border-radius: 50%;
+}
+
+.idioma-item:nth-child(even)::before, .intesivo-item:nth-child(even)::before{
+  content: "";
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  top: 1.625rem;
+  left: 0.5rem;
+  background: #151515;
+  border-radius: 50%;
+}
+
+.curso-ano {
+}
+
+.curso-tipo {
+}

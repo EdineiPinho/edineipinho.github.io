@@ -1,0 +1,68 @@
+.footer {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto;
+  gap: 20px;
+  background: #000000;
+}
+
+h2.contato-titulo {
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.15em;
+  color: #292929;
+  margin: 9rem 0;
+  text-align: center;
+}
+
+.contato-meio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 9rem;
+  padding: 0 10px;
+}
+
+
+.contato-texto {
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.02em;
+  color: #f0f0f0;
+  width: 45ch;
+  margin: 0 40px;
+}
+
+.link-contato {
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 1.875rem;
+  text-align: right;
+  letter-spacing: 0.025em;
+  place-items: center;
+  color: #ffffff;
+}
+
+.contatos-icones {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rodape {
+  margin: 9rem 0;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rodape p {
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
