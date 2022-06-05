@@ -18,6 +18,10 @@
   text-overflow: ellipsis;
 }
 
+img {
+  filter: grayscale(100%);
+}
+
 .introducao h1::before {
   content: " ";
   display: block;
