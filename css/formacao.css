@@ -93,6 +93,7 @@ ul.formacao-lista {
 .intensivos, .idiomas {
   color: #666666;
   position: relative;
+  align-self: start;
 }
 
 .idiomas {
